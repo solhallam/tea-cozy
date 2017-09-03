@@ -45,12 +45,22 @@ nav span a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 70px;
   width: 100%;
 }
 
+h2, h3, h4 {
+  margin: 0;
+  padding: 15px;
+}
+
+#mission, #featured-tea, #locations {
+  padding-top: 70px;
+}
+
+/* First Section */
 #mission {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url(../css/resources/images/img-mission-background.jpg);
@@ -58,7 +68,66 @@ nav span a {
   width: 1200px;
 }
 
-#mission-statement {
+.mission-statement {
   background-color: black;
   width: 1200px;
+}
+
+/* Second Sections */
+#feature-tea-content {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.tea img {
+  height: 200px;
+  width: 300px;
+  padding: 15px 15px 0 15px;
+}
+
+/* Third Section */
+#locations {
+  background-image: url(../css/resources/images/img-locations-background.jpg);
+  width: 1200px;
+  height: 500px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#locations-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  width: 300px;
+  margin: 0 20px;
+}
+
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 200px;
+}
+
+h5 {
+  margin: 15px;
+}
+
+/* Footer */
+footer p {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
 }
